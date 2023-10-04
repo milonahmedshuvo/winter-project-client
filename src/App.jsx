@@ -1,13 +1,15 @@
 import { useState } from 'react'
+import { router } from './Routes/Routes'
+import { RouterProvider } from 'react-router-dom'
 
 
 function App() {
   
 
   return (
-    <>
-      <h1>winter project</h1>
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   )
 }
 
