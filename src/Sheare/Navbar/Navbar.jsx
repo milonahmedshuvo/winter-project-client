@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <div>
-       <h1>navbar</h1>  
+       <h1 className='bg-purple-400'>navbar daisi ui  </h1>  
     </div>
   )
 }
