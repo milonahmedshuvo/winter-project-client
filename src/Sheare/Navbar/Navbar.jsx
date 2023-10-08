@@ -65,7 +65,7 @@ const Navbar = () => {
 
 
 
-    <div className="mt-[33px] mx-2 md:mx-0 ">
+    <div className="mt-[33px] mx-4 md:mx-0 ">
       <div className="flex  justify-between ">
         <div className="image  ">
           <img src={logo} alt="" className="w-[120px] h-[50px]" />
@@ -131,14 +131,14 @@ const Navbar = () => {
       </div>
 
         {/* namubar list  */}
-        <div className="grid grid-cols-3 gap-5  border-b pb-1 shadow-sm lg:grid-cols-7 mt-[24px]">
-            <p className="text-center frontFive text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
+        <div className="grid grid-cols-3 gap-5  border-b pb-1  lg:grid-cols-7 mt-[24px]">
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
             
             
         </div>
