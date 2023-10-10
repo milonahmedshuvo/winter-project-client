@@ -8,8 +8,9 @@ const DatailsPage = () => {
 const {valueOne} = useContext(MyContext)
 console.log("ddddddd", valueOne)
 
-const prod = products.find(pro => pro.id == valueOne)
-console.log(prod)
+const product = products.find(pro => pro.id == valueOne)
+console.log(product)
+const {image, title,  discription, catagoryImage, price, } = product
 
   return (
     <div>

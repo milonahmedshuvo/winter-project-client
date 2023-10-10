@@ -16,12 +16,12 @@ import "../../App.css";
 
 const Navbar = () => {
   return (
-    // <div className="navbar py-6 flex bg-base-100">
-    //   <div className="navbar-start md:w-2/12 ">
+    // <div className=" py-6 flex items-center bg-base-100">
+    //   <div className="navbar-start md:w-1/12 ">
     //     <img src={logo} alt="" />
     //   </div>
 
-    //   <div className="navbar-center md:w-7/12 hidden lg:flex">
+    //   <div className="navbar-center  md:w-7/12 hidden lg:flex">
     //     <ul className=" w-full md:block  px-1">
     //       <div className=" flex  ">
     //         <input
@@ -68,16 +68,17 @@ const Navbar = () => {
     <div className="mt-[33px] mx-4 md:mx-0 ">
       <div className="flex  justify-between ">
         <div className="image  ">
-          <img src={logo} alt="" className="w-[120px] h-[50px]" />
+          <img src={logo} alt="" className=" w-full xl:w-[120px] h-[50px]" />
         </div>
 
         {/* search */}
-        <div className="hidden  md:block">
-          <div className="search ml-[80px] flex  ">
+
+        <div className="hidden md:block ">
+          <div className="search ml-0 xl:ml-[40px] flex  ">
             <input
               type="text"
               placeholder="Im looking for.."
-              className=" pl-4 border w-[713px] h-[50px]"
+              className=" pl-4 border w-full  xl:w-[713px] h-[50px]"
             />
             <div className="w-[65px]  bg-[#0198E9] h-[50px] flex justify-center items-center rounded-tr-[5px] rounded-br-[5px] ">
               <FaSistrix className="text-white text-2xl"></FaSistrix>
@@ -86,7 +87,7 @@ const Navbar = () => {
         </div>
 
         {/* icons  */}
-        <div className="icons flex items-center ml-[85px] ">
+        <div className="icons flex items-center ml-0 lg:ml-[85px] ">
           <div className=" w-5 md:w-[73px] h-[24px] flex items-center ">
             <FaRegUser className="text-[#4C4C4C] text-[20px]"></FaRegUser>
             <p className="text-[#29292E] w-[43px] h-[19px] leading-[19px] styleFront text-[16px] ml-2 hidden md:block">

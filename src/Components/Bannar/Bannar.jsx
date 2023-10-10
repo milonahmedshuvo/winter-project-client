@@ -5,7 +5,7 @@ import tree from "../../image/tree.png";
 
 const Bannar = () => {
   return (
-    <div className="flex mx-4 md:mx-0 mt-5">
+    <div className="flex gap-2 mx-4 md:mx-0 mt-5">
       <div className="relative">
         <img src={one} alt="" />
         <button className="bg-[#0198E9] w-[99px] h-[24px] md:w-[139px] md:h-[44px] frontSix text-[#FFFFFF] text-[12px] md:text-[16px] rounded absolute bottom-16 left-10 md:bottom-28 md:left-16 ">

@@ -23,7 +23,7 @@ const Category = () => {
         Category
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-0 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1  ">
         {/* item 1 */}
         <div className="drop-shadow-md">
           <div className="flex justify-between items-center bg-[#FFFFFF] drop-shadow-md rounded-md w-full h md:w-[270px] h-[65px]   ">
