@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { MyContext } from '../../../Context'
 import products from '../../data'
-import { FaStar, FaRegHeart, FaCheck, FaRegWindowMinimize, FaPlus } from "react-icons/fa";
+import { FaStar, FaRegHeart, FaCheck, FaRegWindowMinimize, FaPlus, FaWhatsapp,FaHive, FaLinkedin,FaTwitter, FaFacebookF } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -24,14 +24,38 @@ const {image, title,  discription, catagoryImage, price, option } = product
 
   return (
     <div>
-      <h1>datails page</h1>  
-
+     
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 '>
 
               <div className="image border border-purple-400 w-full flex justify-between">
                    <div>
                     <img src={images} className='w-[519px] border border-[#F4F4F6]' alt="" />
+                    
+                      <div className='flex items-center mt-4 '>
+                         <p className='text-[#333333] text-[20px] styleFront '>Shere</p>
+
+                         <p className='w-[44px] h-[44px] bg-[#E2ECEF] rounded-full flex justify-center items-center ml-3 ' >
+                          <FaLinkedin className='text-[#268AA9] h-[19px] w-[19px]'></FaLinkedin>
+                         </p>
+
+                         <p className='w-[44px] h-[44px] bg-[#E1F4F6] rounded-full flex justify-center items-center  ml-3 ' >
+                          <FaTwitter className='text-[#53D1E2] h-[19px] w-[19px]'></FaTwitter>
+                         </p>
+
+                         <p className='w-[44px] h-[44px] bg-[#DFEAF5] rounded-full flex justify-center items-center  ml-3 ' >
+                          <FaFacebookF className='text-[#2C94EA] h-[19px] w-[19px]'></FaFacebookF>
+                         </p>
+
+                         <p className='w-[44px] h-[44px] bg-[#3AB13726] rounded-full flex justify-center items-center  ml-3 ' >
+                          <FaWhatsapp className='text-[#3AB137] h-[19px] w-[19px]'></FaWhatsapp>
+                         </p>
+
+                         <p className='w-[44px] h-[44px] bg-[#FBE5D9] rounded-full flex justify-center items-center  ml-3 ' >
+                          <FaHive className='text-[#FF7020] h-[19px] w-[19px]'></FaHive>
+                         </p>
+                      </div>
+
                    </div>
 
                    <div className='mt-3 flex flex-col'>
@@ -59,7 +83,7 @@ const {image, title,  discription, catagoryImage, price, option } = product
         </p>
 
         <p className='flex items-center'> <FaCheck className='text-green-400'></FaCheck> <span className='text-[14px] ml-2 text-[#333333] styleFront '> 4,320 sold</span> </p>
-        <p className='flex items-center' > <FaRegHeart></FaRegHeart> <span className='text-[#0198E9] styleFront ml-4 '>Add to wishlist</span></p>
+        <p className='flex items-center' > <FaRegHeart></FaRegHeart> <span className='text-[#0198E9] styleFront ml-2 '>Add to wishlist</span></p>
                  </div>
 
 
