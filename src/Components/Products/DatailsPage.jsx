@@ -23,14 +23,15 @@ const {image, title,  discription, catagoryImage, price, option } = product
 
 
   return (
-    <div>
-     
+    <div className=''> 
+         <p className='mt-4 mb-6'> <span className='font-[600]'>Home ></span> <span className='font-[600]'> Men’s fashion ></span> Men's Stand Collar Leather Jacket </p>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 '>
 
-              <div className="image border border-purple-400 w-full flex justify-between">
-                   <div>
-                    <img src={images} className='w-[519px] border border-[#F4F4F6]' alt="" />
+              <div className="image border border-purple-400 w-full flex  lg:justify-between ">
+
+                   <div className='w-5/6'>
+                    <img src={images} className=' w-full  lg:w-[519px] border border-[#F4F4F6]' alt="" />
                     
                       <div className='flex items-center mt-4 '>
                          <p className='text-[#333333] text-[20px] styleFront '>Shere</p>
@@ -58,11 +59,13 @@ const {image, title,  discription, catagoryImage, price, option } = product
 
                    </div>
 
-                   <div className='mt-3 flex flex-col'>
+                  
+                  <div className=' mt-0 xl:mt-2   flex flex-col   border border-red-200'>
                        {
-                        catagoryImage.map((img, i) => <button onClick={() => setImage(img)} key={i} className='focus:border border-[#21A2F8]'>   <img src={img}  className='my-3  w-[104px] h-[104px] ' ></img>  </button> )
+                        catagoryImage.map((img, i) => <button onClick={() => setImage(img)} key={i} className='focus:border border-[#21A2F8]'>   <img src={img}  className='my-3 w-[104px] lg:h-[104px] ' ></img>  </button> )
                        }
-                   </div>
+                
+                  </div>
               </div>
 
 
@@ -155,7 +158,7 @@ const {image, title,  discription, catagoryImage, price, option } = product
 
 
 
-                  <p className='flex justify-start items-center w-[600px] mt-6 '>
+                  <p className='flex justify-start items-center w-full  xl:w-[600px] mt-6 '>
 
                       <p className='flex items-center'>
                         <span className='text-[14px] text-[#3D3D3F] styleFront mr-1'>Quantity: </span>
@@ -184,9 +187,9 @@ const {image, title,  discription, catagoryImage, price, option } = product
 
 
                       <div className='flex gap-5'>
-                        <input type="button" className='text-[#FFFFFF] text-[16px] frontFive w-[165px] h-[35px] bg-[#0198E9] rounded ' value="Add to card" />
+                        <input type="button" className='text-[#FFFFFF] p-1  text-[16px] frontFive w-full lg:w-[165px] h-full lg:h-[35px] bg-[#0198E9] rounded ' value="Add to card" />
                         
-                        <input type="button" className='text-[#0198E9] text-[16px] frontFive w-[165px] h-[35px] border border-[#0198E9] rounded' value="Add to card" />
+                        <input type="button" className='text-[#0198E9] p-1 text-[16px] frontFive w-full lg:w-[165px] h-full lg:h-[35px] border border-[#0198E9] rounded' value="Add to card" />
                       </div>
 
 
