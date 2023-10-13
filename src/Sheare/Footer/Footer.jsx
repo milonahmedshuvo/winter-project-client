@@ -1,9 +1,10 @@
 import React from 'react'
+import FooterOne from './FooterOne'
 
 const Footer = () => {
   return (
     <div>
-      <h1>Footer</h1>
+      <FooterOne></FooterOne>
     </div>
   )
 }
