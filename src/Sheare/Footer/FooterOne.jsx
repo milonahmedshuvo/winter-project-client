@@ -6,7 +6,7 @@ import payment from "../../image/payment.png";
 
 const FooterOne = () => {
   return (
-    <div className="flex flex-col gap-4 md:flex-row mt-20 justify-between mx-4">
+    <div className="flex flex-col gap-4 md:flex-row mt-20 justify-between mx-4 border-b-2 pb-10">
       <div className="flex mt-5 ">
         <div>
           <img src={shipping} alt="" />
