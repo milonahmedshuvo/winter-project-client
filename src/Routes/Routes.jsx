@@ -6,6 +6,7 @@ import Category from "../Components/Category/Category";
 import Home from "../Components/Home";
 import DatailsPage from "../Components/Products/DatailsPage";
 import FutureProducts from "../Components/FutureProducts/FutureProducts";
+import Datails from "../Components/FutureProducts/Datails";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: "/future",
                 element: <FutureProducts></FutureProducts>
+            },
+            {
+                path: "/futureProdcutDatails/:id",
+                element: <Datails></Datails>
             }
             
         ]
