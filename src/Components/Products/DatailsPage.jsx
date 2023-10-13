@@ -31,12 +31,7 @@ const DatailsPage = () => {
   const [images, setImage] = useState(image);
 
   return (
-    <div className="">
-
-
-      
-
-
+    <div className="mx-4">
       <p className="mt-4 mb-6">
         {" "}
         <span className="font-[600]">Home ></span>{" "}
@@ -45,7 +40,7 @@ const DatailsPage = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-10 md:gap-1 lg:gap-6  ">
-        <div className="image border border-purple-400 w-full flex  lg:justify-between ">
+        <div className="image  w-full flex  lg:justify-between ">
           <div className="w-5/6">
             <img
               src={images}
@@ -78,7 +73,7 @@ const DatailsPage = () => {
             </div>
           </div>
 
-          <div className=" mt-0 xl:mt-2   flex flex-col   border border-red-200">
+          <div className=" mt-0 xl:mt-2   flex flex-col   ">
             {catagoryImage.map((img, i) => (
               <button
                 onClick={() => setImage(img)}
@@ -95,7 +90,7 @@ const DatailsPage = () => {
           </div>
         </div>
 
-        <div className="allDatails border border-green-300  w-full md:w-5/6 lg:w-[661px] pr-6">
+        <div className="allDatails w-full md:w-5/6 lg:w-[661px] pr-6">
           <p className="text-[26px] text-[#333333] frontFive ">{title}</p>
           <div className="flex  justify-between items-center">
             <p className=" flex items-center my-2 ">
@@ -302,7 +297,7 @@ const DatailsPage = () => {
           </p>
         </div>
 
-        <p className="w-[853px] h-[140px] flex items-center justify-start gap-4">
+        <p className="w-[853px] h-[140px] flex items-center justify-start gap-4 my-10">
           <div>
             <p className="text-[#3D3D3F] frontFive ">Customer reviews</p>
             <p className=" flex items-center  ">
@@ -320,91 +315,203 @@ const DatailsPage = () => {
 
           <div>
             <p className="flex items-center">
-              <span>5 stars</span>
-              <span className=" w-[154px] lg:w-[200px] h-[7px] bg-[#FFB340]">
+              <span className="mr-[2px]">5 stars</span>
+              <span className=" w-[80px] md:w-[200px] h-[6px] bg-[#FFB340]">
                 {" "}
               </span>
-              <span>79%</span>
+              <span className="ml-[2px]">79%</span>
+            </p>
+
+            <p className="flex items-center">
+              <span className="mr-[2px]">5 stars</span>
+              <span className=" w-[80px] md:w-[200px] h-[6px] bg-[#FFB340]">
+                {" "}
+              </span>
+              <span className="ml-[2px]">60%</span>
+            </p>
+
+            <p className="flex items-center">
+              <span className="mr-[2px]">5 stars</span>
+              <span className=" w-[80px] md:w-[200px] h-[6px] bg-[#FFB340]">
+                {" "}
+              </span>
+              <span className="ml-[2px]">40%</span>
+            </p>
+
+            <p className="flex items-center">
+              <span className="mr-[2px]">5 stars</span>
+              <span className=" w-[80px] md:w-[200px] h-[6px] bg-[#FFB340]">
+                {" "}
+              </span>
+              <span className="ml-[2px]">39%</span>
             </p>
           </div>
 
           <div>
-            <button className="text-white text-[15px] bg-[#0198E9] px-5 rounded">
+            <button className="text-white text-[8px] md:text-[15px] bg-[#0198E9] md:px-5 px-1 py-2 md:py-0 rounded">
               Write to Review
             </button>
           </div>
         </p>
-
-
-
-
-        
-
       </div>
 
-
-
-
-
-
-
       <div className="">
+        <p className="frontFive">Reviews (4) </p>
 
-          <p className="frontFive">Reviews (4) </p>
-
-
-          
-
-
-
-
-
-
-
-          <div className=" border my-32 border-red-400   ">
-
-
-            <div className="inline">            
-              <img className="  inline" src={vanille} alt="" />
-              <span>
-               <span className="block">ddddddddddddddd</span>
-               <span>ddddddddddddd</span>  
-              </span>
+        <div className="reviewOne mt-5">
+          <div className=" flex ">
+            <div>
+              <img src={vanille} alt="" />
             </div>
 
-
-             
-
-         
-
-
-            {/* <div className="boder border-red-300">
+            <div className="ml-2">
               <span>vanille</span>
               <div className=" flex items-center  ">
-                <FaStar className="text-[#FAC96B]"></FaStar>
-                <FaStar className="text-[#FAC96B]"></FaStar>
-                <FaStar className="text-[#FAC96B]"></FaStar>
-                <FaStar className="text-[#FAC96B]"></FaStar>
-                <FaStar className="text-[#D3D3D3]"></FaStar>
+                <FaStar className="text-[#FAC96B] "></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#D3D3D3] ml-2"></FaStar>
                 <span className="text-[#BABABA] text-[10px] xl:text-[18px] ml-1 ">
                   {" "}
-                  4.6 out of 5{" "}
+                  1 Month Ago{" "}
                 </span>
               </div>
-            </div> */}
+            </div>
+          </div>
+          <p className="text-[#383838] styleFront my-2 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+        </div>
 
+        {/* rivew two  */}
+        <div className="reviewOne mt-5">
+          <div className=" flex ">
+            <div>
+              <img src={maduin} alt="" />
+            </div>
 
+            <div className="ml-2">
+              <span>vanille</span>
+              <div className=" flex items-center  ">
+                <FaStar className="text-[#FAC96B] "></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#D3D3D3] ml-2"></FaStar>
+                <span className="text-[#BABABA] text-[10px] xl:text-[18px] ml-1 ">
+                  {" "}
+                  1 Month Ago{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <p className="text-[#383838] styleFront my-2 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+        </div>
+
+        {/* review tree */}
+        <div className="reviewOne mt-5">
+          <div className=" flex ">
+            <div>
+              <img src={samantha} alt="" />
+            </div>
+
+            <div className="ml-2">
+              <span>vanille</span>
+              <div className=" flex items-center  ">
+                <FaStar className="text-[#FAC96B] "></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#D3D3D3] ml-2"></FaStar>
+                <span className="text-[#BABABA] text-[10px] xl:text-[18px] ml-1 ">
+                  {" "}
+                  1 Month Ago{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <p className="text-[#383838] styleFront my-2 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+        </div>
+
+        {/* review four  */}
+        <div className="reviewOne mt-5">
+          <div className=" flex ">
+            <div>
+              <img src={reveria} alt="" />
+            </div>
+
+            <div className="ml-2">
+              <span>vanille</span>
+              <div className=" flex items-center  ">
+                <FaStar className="text-[#FAC96B] "></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+                <FaStar className="text-[#D3D3D3] ml-2"></FaStar>
+                <span className="text-[#BABABA] text-[10px] xl:text-[18px] ml-1 ">
+                  {" "}
+                  1 Month Ago{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <p className="text-[#383838] styleFront my-2 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+        </div>
+
+        {/* input filed  */}
+
+        <div className=" w-full lg:w-[745px]  my-10">
+          <div className="text">
+            <h4 className="text-[#383838] frontSix ">Add Your Review</h4>
+            <p className="text-[#A7A7A7] styleFront mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
 
+          <div className="my-5">
+            <p className="text-[#383838] styleFront ">Name *</p>
+            <input type="text" className="border w-full mt-2 py-1" />
+          </div>
 
+          <div className="my-3">
+            <p className="text-[#383838] styleFront ">Email *</p>
+            <input type="text" className="border w-full mt-2 py-1" />
+          </div>
 
+          <div className="my-3">
+            <p className="text-[#383838] styleFront ">Review *</p>
+            <input type="text" className="border w-full mt-2 py-7" />
+          </div>
 
+          <div className=" flex items-center md:hidden lg:hidden   mt-7  ">
+            <p className="text-[#383838] frontFive ">Rating</p>
+            <FaStar className="text-[#FAC96B] ml-2 "></FaStar>
+            <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+            <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+            <FaStar className="text-[#FAC96B] ml-2"></FaStar>
+            <FaStar className="text-[#D3D3D3] ml-2"></FaStar>
+          </div>
 
+          <input
+            type="button"
+            className="text-white bg-[#0198E9] mt-8 p-1 md:text-[10px] lg:text-[16px] frontFive w-full md:w-[165px] h-full lg:h-[35px] border border-[#0198E9] rounded"
+            value="Submit"
+          />
         </div>
+      </div>
     </div>
-
-
-    
   );
 };
 
