@@ -7,6 +7,7 @@ import Home from "../Components/Home";
 import DatailsPage from "../Components/Products/DatailsPage";
 import FutureProducts from "../Components/FutureProducts/FutureProducts";
 import Datails from "../Components/FutureProducts/Datails";
+import Checkout from "../Components/CheckOut/Checkout";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: "/futureProdcutDatails/:id",
                 element: <Datails></Datails>
+            },
+            {
+                path: "/checkout",
+                element: <Checkout></Checkout>
             }
             
         ]

@@ -20,7 +20,7 @@ import {
   FaTwitter,
   FaFacebookF,
 } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DatailsPage = () => {
   const { valueOne } = useContext(MyContext);
@@ -206,11 +206,15 @@ const DatailsPage = () => {
             </p>
 
             <div className="flex  gap-3 lg:gap-1 xl:gap-5">
+
+              <Link to="/checkout" >
               <input
                 type="button"
                 className="text-[#FFFFFF] p-1 md:text-[10px] lg:text-[16px] frontFive w-full lg:w-[165px] h-full lg:h-[35px] bg-[#0198E9] rounded "
                 value="Add to card"
               />
+              </Link>
+              
 
               <input
                 type="button"

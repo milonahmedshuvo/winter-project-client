@@ -16,7 +16,7 @@ import {
 
 const FooterTwo = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-14 mx-4 ">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-14 mx-4 pb-8">
       <div className="divOne">
         <div>
           <img src={logo} alt="" />

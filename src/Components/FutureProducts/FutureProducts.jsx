@@ -14,6 +14,8 @@ const FutureProducts = () => {
           </OneProducts>
         ))}
       </div>
+
+      <input type="button" value="See more" className='w-[175px] text-white h-[45px] bg-[#34ADED]' />
     </div>
   )
 }
