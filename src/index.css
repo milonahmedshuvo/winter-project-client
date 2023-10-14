@@ -37,3 +37,11 @@
     
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 580px) {
+  .ss{
+    bottom: 28px;
+    left: 25px;
+  }
+  
+}

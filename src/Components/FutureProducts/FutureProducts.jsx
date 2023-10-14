@@ -15,7 +15,9 @@ const FutureProducts = () => {
         ))}
       </div>
 
-      <input type="button" value="See more" className='w-[175px] text-white h-[45px] bg-[#34ADED]' />
+      <div className='flex justify-center'>
+      <input type="button" value="See more" className=' w-1/4 md:w-[175px] mt-6  rounded text-white h-[30px] md:h-[45px] bg-[#34ADED]' />
+      </div>
     </div>
   )
 }

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 // import abc from '../../../public/fristproducts.json'
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -67,9 +68,11 @@ const Navbar = () => {
 
     <div className="mt-[33px] mx-4 md:mx-0 ">
       <div className="flex  justify-between ">
+        
         <div className="image  ">
-          <img src={logo} alt="" className=" w-full xl:w-[120px] h-[50px]" />
+          <Link to="/"><img src={logo} alt="" className=" w-full xl:w-[120px] h-[50px]" /></Link>
         </div>
+        
 
         {/* search */}
 
