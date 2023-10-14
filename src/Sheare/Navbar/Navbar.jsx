@@ -78,7 +78,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Im looking for.."
-              className=" pl-4 border w-full  xl:w-[713px] h-[50px]"
+              className=" pl-4 border w-full  xl:w-[650px] h-[50px]"
             />
             <div className="w-[65px]  bg-[#0198E9] h-[50px] flex justify-center items-center rounded-tr-[5px] rounded-br-[5px] ">
               <FaSistrix className="text-white text-2xl"></FaSistrix>
@@ -134,12 +134,12 @@ const Navbar = () => {
         {/* namubar list  */}
         <div className="grid grid-cols-3 gap-5  border-b pb-1  lg:grid-cols-7 mt-[24px]">
             <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
-            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Women's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >men's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] " >Kid's Fashion</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Home & Lifestyle</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Arts & Crafts</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Electronics</p>
+            <p className="text-center frontFive text-[14px] md:text-[16px] text-[#333333] hidden md:block " >Food & Grocery</p>
             
             
         </div>

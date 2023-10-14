@@ -8,8 +8,8 @@ const FooterOne = () => {
   return (
     <div className="flex flex-col gap-4 md:flex-row mt-20 justify-between mx-4 border-b-2 pb-10">
       <div className="flex mt-5 ">
-        <div>
-          <img src={shipping} alt="" />
+        <div className="mr-4">
+          <img className="w-[55px] h-[44px]" src={shipping} alt="" />
         </div>
 
         <div className="ml-2">
@@ -21,8 +21,8 @@ const FooterOne = () => {
       </div>
 
       <div className="flex mt-5 ">
-        <div>
-          <img src={star} alt="" />
+        <div className="mr-4">
+          <img className="w-[55px] h-[44px]" src={star} alt="" />
         </div>
 
         <div className="ml-2">
@@ -34,8 +34,8 @@ const FooterOne = () => {
       </div>
 
       <div className="flex mt-5 ">
-        <div>
-          <img src={retun} alt="" />
+        <div className="mr-4">
+          <img className="w-[55px] h-[44px]" src={retun} alt="" />
         </div>
 
         <div className="ml-2">
@@ -47,8 +47,8 @@ const FooterOne = () => {
       </div>
 
       <div className="flex mt-5">
-        <div>
-          <img src={payment} alt="" />
+        <div className="mr-4">
+          <img className="w-[55px] h-[44px]" src={payment} alt="" />
         </div>
 
         <div className="ml-2">

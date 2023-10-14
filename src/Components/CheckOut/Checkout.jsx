@@ -3,10 +3,13 @@ import { FaTrash, FaPlus, FaRegWindowMinimize } from "react-icons/fa";
 import watch from "../../image/smart.png";
 import chair from "../../image/chair.png";
 import female from "../../image/female.png";
+import { Link } from "react-router-dom";
+
+
 
 const Checkout = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 mt-10 bg-[#F9F9F9]">
+    <div className="flex flex-col md:flex-row gap-4 mt-10 bg-[#F9F9F9] mx-4">
       <div className="w-full md:w-8/12 lg:w-9/12 ">
         <div className="itemOne flex justify-between items-center bg-[#FFFFFF] px-5 h-[88px] shadow-sm py-2 ">
           <div className="flex">
@@ -156,7 +159,7 @@ const Checkout = () => {
       </div>
 
       {/* card  */}
-      <div className="bg-[#FFFFFF] shadow w-full md:w-4/12 lg:w-3/12 px-6 py-3  ">
+      <div className="bg-[#FFFFFF] shadow w-full md:w-4/12 lg:w-3/12 px-6 py-3 h-[300px] ">
         <p className="text-[#333333] text-[20px] frontFive ">My Orders</p>
         <div className="flex justify-between items-center mt-6">
           <span className="text-[#8D8D8D] text-[18px] styleFront">
@@ -183,11 +186,16 @@ const Checkout = () => {
           </span>
         </div>
 
+
+        <Link to="/orders" >
         <input
           className="w-full bg-[#0198E9] mt-6 py-1 rounded text-white"
           type="button"
           value="Proceed to Checkout"
         />
+        </Link>
+
+        
       </div>
     </div>
   );
